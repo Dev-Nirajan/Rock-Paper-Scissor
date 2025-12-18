@@ -9,11 +9,10 @@ h1 {
   color: #fff;
   height: 5rem;
   line-height: 5rem;
+  width: 100vw;
 }
 
 .choice {
-  height: 165px;
-  width: 165px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -26,18 +25,18 @@ h1 {
 }
 
 img {
-  height: 150px;
-  width: 150px;
+  height: 5rem;
+  width: 5rem;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .choices {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
+  padding-left: 1rem;
+  gap: 2rem;
   margin-top: 5rem;
+  justify-content: center;
 }
 
 .score-board {
@@ -61,8 +60,10 @@ img {
 #msg {
   background-color: #081b31;
   color: #fff;
-  font-size: 2rem;
-  display: inline;
-  padding: 1rem;
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+  display: inline-block;
   border-radius: 1rem;
+  padding: 1rem;
+  max-width: 90%;
+  word-break: brake-word;
 }
